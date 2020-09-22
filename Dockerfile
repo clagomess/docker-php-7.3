@@ -2,7 +2,7 @@ FROM debian:10
 
 RUN apt update
 RUN apt install build-essential -y
-RUN apt install apache2 php php-mbstring php-pgsql php-soap php-pear php-dev vim wget -y
+RUN apt install apache2 curl php php-curl php-mbstring php-pgsql php-soap php-pear php-dev vim wget -y
 
 # php xdebug
 RUN pecl channel-update pecl.php.net
